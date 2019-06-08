@@ -13,13 +13,13 @@ class ViewController: UIViewController {
 	@IBOutlet weak var counterLabel: UILabel!
 	@IBAction func button(_ sender: Any) {
 		clicks += 1
-		counterLabel.text = String(clicks)
+		counterLabel.text = "You did \(String(clicks)) clicks"
 	}
 	
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-		counterLabel.text = String(clicks)
+		counterLabel.text = "You did \(String(clicks)) clicks"
 		
 		
     }
